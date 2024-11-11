@@ -20,7 +20,7 @@ jobs:
       - run: npm ci
 
       # Lint
-      - run: npm run lint -- --quiet
+      - run: npm run lint
 
       # Build workspaces
       - run: npm run build
