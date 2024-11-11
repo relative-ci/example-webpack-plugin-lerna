@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "RelativeCI example",
   "scripts": {
-    "lint": "npm run lint --workspaces",
-    "build": "npm run build --workspaces",
+    "lint": "lerna run lint",
+    "build": "lerna run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,5 +13,9 @@
   "workspaces": [
     "apps/app-1",
     "apps/app-2"
-  ]
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "lerna": "8.1.9"
+  }
 }
